@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertext Markup Language (HTML) - Wikipedia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 100%; /* Changed from max-width to take up full width */
+            margin: 0; /* Ensures no centering margin */
+            padding: 20px;
+            display: flex;
+        }
+        .main-content {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .sidebar {
+            width: 250px;
+            padding-right: 20px;
+            border-right: 1px solid #c8ccd1;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 5px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #c8ccd1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .header .user-links a {
+            margin-left: 15px;
+        }
+        .vcard {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            font-size: 0.9em;
+            padding: 10px;
+            float: right;
+            margin: 0 0 1em 1em;
+            max-width: 250px;
+        }
+        .vcard ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .vcard li {
+            margin-bottom: 5px;
+        }
+        .vcard img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .toc {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .toc-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .toc ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .toc ol ol {
+            margin-top: 5px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #c8ccd1;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            clear: both;
+        }
+        h1 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+        }
+        h2 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 3px;
+        }
+        code, pre {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        pre {
+            display: block;
+            padding: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">Wikipedia</div>
+    <nav class="user-links">
+        <a href="#">Arjun</a>
+        <a href="#">Talk</a>
+        <a href="#">Preferences</a>
+    </nav>
+</div>
+
+<div class="container">
+    <aside class="sidebar">
+        <nav>
+            <p><strong>Contents</strong></p>
+            <ul>
+                <li><a href="#">Article</a></li>
+                <li><a href="#">Talk</a></li>
+                <li><a href="#">Read</a></li>
+                <li><a href="#">View source</a></li>
+                <li><a href="#">View history</a></li>
+                <li><a href="#">Tools</a></li>
+            </ul>
+        </nav>
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ol>
+                <li><a href="#toc-intro">Hypertext Markup Language (HTML)</a></li>
+                <li><a href="#toc-history">History</a>
+                    <ol>
+                        <li><a href="#toc-dev">Development</a></li>
+                    </ol>
+                </li>
+                <li><a href="#toc-timeline">HTML version timeline</a>
+                    <ol>
+                        <li><a href="#toc-html2">HTML 2</a></li>
+                        <li><a href="#toc-html3">HTML 3</a></li>
+                        <li><a href="#toc-html4">HTML 4</a></li>
+                        <li><a href="#toc-html5">HTML 5</a></li>
+                    </ol>
+                </li>
+                <li><a href="#toc-markup">Markup</a></li>
+                <li><a href="#toc-elements">Elements</a>
+                    <ol>
+                        <li><a href="#toc-examples">Element examples</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <aside class="vcard">
+            <p style="text-align: center;"><strong>HTML</strong></p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Official logo of HTML5" width="200">
+            <ul>
+                <li><strong>Filename extension:</strong> .html, .htm</li>
+                <li><strong>Internet media type:</strong> text/html</li>
+                <li><strong>Developed by:</strong> WHATWG, World Wide Web Consortium (W3C; formerly)</li>
+                <li><strong>Initial release:</strong> 1993; 32 years ago</li>
+                <li><strong>Latest release:</strong> Living Standard</li>
+                <li><strong>Type of format:</strong> Document file format</li>
+                <li><strong>Website:</strong> <a href="https://html.spec.whatwg.org/">html.spec.whatwg.org</a></li>
+            </ul>
+        </aside>
+    
+        <h1 id="toc-intro">Hypertext Markup Language (HTML)</h1>
+        <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+        <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.</p>
+    
+        <h2 id="toc-history">History</h2>
+        <h3 id="toc-dev">Development</h3>
+        <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system. Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes of 1990, Berners-Lee listed "some of the many areas in which hypertext is used"; an encyclopedia is the first entry.</p>
+    
+        <h2 id="toc-timeline">HTML version timeline</h2>
+        <h3 id="toc-html2">HTML 2</h3>
+        <p>November 24, 1995: HTML 2.0 was published as RFC 1866. Supplemental RFCs added capabilities...</p>
+        
+        <h3 id="toc-html3">HTML 3</h3>
+        <p>January 14, 1997: HTML 3.2 was published as a W3C Recommendation. It was the first version developed and standardized exclusively by the W3C, as the IETF had closed its HTML Working Group on September 12, 1996.</p>
+    
+        <h3 id="toc-html4">HTML 4</h3>
+        <p>December 18, 1997: HTML 4.0 was published as a W3C Recommendation. It offers three variations: Strict, Transitional, and Frameset...</p>
+    
+        <h2 id="toc-markup">Markup</h2>
+        <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like &lt;h1&gt; and &lt;/h1&gt;, although some represent empty elements and so are unpaired, for example &lt;img&gt;.</p>
+    
+        <h2 id="toc-elements">Elements</h2>
+        <p>HTML documents imply a structure of nested HTML elements. These are indicated in the document by HTML tags, enclosed in angle brackets. In the simple, general case, the extent of an element is indicated by a pair of tags: a "start tag" &lt;p&gt; and "end tag" &lt;/p&gt;. The text content of the element, if any, is placed between these tags.</p>
+    
+        <h3 id="toc-examples">Element examples</h3>
+        <h4>Header of the HTML document: &lt;head&gt;...&lt;/head&gt;.</h4>
+        <pre><code>&lt;head&gt;
+  &lt;title&gt;The Title&lt;/title&gt;
+  &lt;link rel="stylesheet" href="stylebyjimbowales.css"&gt; &lt;!-- Imports Stylesheets --&gt;
+&lt;/head&gt;</code></pre>
+    
+        <h4>Headings</h4>
+        <h1>Heading level 1</h1>
+        <h2>Heading level 2</h2>
+        <h3>Heading level 3</h3>
+        <h4>Heading level 4</h4>
+        <h5>Heading level 5</h5>
+        <h6>Heading level 6</h6>
+    
+        <h4>Paragraphs:</h4>
+        <p>This is a paragraph.</p>
+    
+        <h4>Links</h4>
+        <p>This is a link in HTML. To create a link the &lt;a&gt; tag is used. The href attribute holds the URL address of the link.</p>
+        <p><a href="https://www.wikipedia.org/">A link to Wikipedia!</a></p>
+    
+    </div>
+</div>
+
+<footer class="footer">
+    <p>This page is a simplified recreation of a Wikipedia article for demonstration purposes.</p>
+</footer>
+
+</body>
+</html>
